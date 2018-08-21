@@ -1,7 +1,7 @@
 {
-  "name": "[[=name]]",
-  "version": "[[=version]]",
-  "description": "[[=description]]",
+  "name": "[[=model.name]]",
+  "version": "[[=model.version]]",
+  "description": "[[=model.description]]",
   "author": "charles.yang",
   "private": true,
   "scripts": {
