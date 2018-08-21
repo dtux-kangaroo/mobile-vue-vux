@@ -1,7 +1,7 @@
 {
-  "name": "sunglasses",
-  "version": "1.0.0",
-  "description": "this is h5",
+  "name": "[[=name]]",
+  "version": "[[=version]]",
+  "description": "[[=description]]",
   "author": "charles.yang",
   "private": true,
   "scripts": {
