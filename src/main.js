@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import FastClick from 'fastclick'
 import App from './app'
-import router from './router'
+import router from './router/router'
 import store from './store'
 import { WechatPlugin,AjaxPlugin } from 'vux'
 Vue.use(WechatPlugin)

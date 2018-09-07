@@ -52,12 +52,12 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     }),
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, '../config'),
-        to: config.build.assetsSubDirectory+'/conf'
+        from: './src/public/config',
+        to: './conf'
       },
       {
-        from: path.resolve(__dirname, '../mock'),
-        to: config.build.assetsRoot+'/mock'
+        from: './src/public/mock',
+        to: './mock'
       }
     ]),
     new webpack.HotModuleReplacementPlugin(),
