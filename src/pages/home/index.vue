@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="vux-home">
+    <div class="vux-home vux-1px">
       home--主页{{msg}}
       <Percent></Percent>
   </div>
