@@ -6,6 +6,7 @@ import App from './app'
 import router from './router/router'
 import store from './store'
 import { WechatPlugin,AjaxPlugin } from 'vux'
+import '@babel/polyfill'
 Vue.use(WechatPlugin)
 Vue.use(AjaxPlugin)
 
