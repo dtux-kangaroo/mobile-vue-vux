@@ -20,10 +20,10 @@ export default {
     }
   },
   mounted() {
-    // api.getHomeData({}).then(ret=>{
-    //   console.log(then);
-    //   this.$router.push({ name: "home", params: { id: ret.data } });
-    // })
+    api.getHomeData({}).then(ret=>{
+      console.log(then);
+      this.$router.push({ name: "home", params: { id: ret.data } });
+    })
   }
 }
 </script>

@@ -1,12 +1,10 @@
 import http from '../utils/http'
 import reqUrl from './reqUrl'
 export default {
-  async getHomeData(param){
-    let ret= await http.get(reqUrl.getHomeData, param);
-    return ret;
+   getHomeData(param){
+    return http.get(reqUrl.getHomeData, param);
   },
-  async getUserData(param){
-    let ret= await http.get(reqUrl.getUserData, param);
-    return ret;
+   getUserData(param){
+    return http.get(reqUrl.getUserData, param);
   }
 }

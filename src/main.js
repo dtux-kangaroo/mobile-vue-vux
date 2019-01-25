@@ -1,23 +1,18 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
-import FastClick from 'fastclick'
+import router from '@/router/router'
+import vuexI18n from 'vuex-i18n';
+import store from '@/store'
+// import FastClick from 'fastclick'
 import App from './app'
-import router from './router/router'
-import store from './store'
-import { WechatPlugin,AjaxPlugin } from 'vux'
-import '@babel/polyfill'
-Vue.use(WechatPlugin)
-Vue.use(AjaxPlugin)
 
-FastClick.attach(document.body)
-console.log(Vue.wechat,'WechatPlugin');
-// Vue.http.get('/api', ({data}) => {
-//   Vue.wechat.config(data.data)
-// }) 这里引入微信js-sdk-配置信息
+Vue.use(vuexI18n.plugin, store);
 
+Vue.i18n.set('en');
 new Vue({
+  el:"#app-box",
   router,
   store,
   render: h => h(App)
-}).$mount('#app-box')
+});

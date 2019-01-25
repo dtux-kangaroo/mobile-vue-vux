@@ -11,19 +11,19 @@
 			<x-button type="primary" @click.native="drawerOpen">弹出抽屉</x-button>
 			<tabbar>
 				<tabbar-item link="/auth">
-					<img slot="icon" src="../public/assets/img/logo.png">
+					<img slot="icon" src="/public/assets/img/logo.png">
 					<span slot="label">Wechat</span>
 				</tabbar-item>
 				<tabbar-item link="/" selected>
-					<img slot="icon" src="../public/assets/img/logo.png">
+					<img slot="icon" src="/public/assets/img/logo.png">
 					<span slot="label">Message</span>
 				</tabbar-item>
 				<tabbar-item>
-					<img slot="icon" src="../public/assets/img/logo.png">
+					<img slot="icon" src="/public/assets/img/logo.png">
 					<span slot="label">Explore</span>
 				</tabbar-item>
 				<tabbar-item>
-					<img slot="icon" src="../public/assets/img/logo.png">
+					<img slot="icon" src="/public/assets/img/logo.png">
 					<span slot="label">News</span>
 				</tabbar-item>
 			</tabbar>
@@ -31,12 +31,12 @@
  	</div>
 </template>
 <script>
-import { Tabbar, TabbarItem, Drawer, XButton } from "vux";
+import {Drawer,Tabbar, TabbarItem,  XButton} from "vux";
 export default {
   components: {
+		Drawer,
     Tabbar,
     TabbarItem,
-    Drawer,
     XButton
   },
   data() {

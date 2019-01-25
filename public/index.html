@@ -10,8 +10,12 @@
     <title>sunglasses</title>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=j36ArW5Nh69QxGwSa9u0a2Chn36Ty47I"></script>
     <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible.js"></script>
-  </head>
+   <%= htmlWebpackPlugin.options.assets.config %> 
+</head>
   <body>
     <div id="app-box"></div>
-  </body>
+  <div class="dll">
+                  <%= htmlWebpackPlugin.options.assets.scripts %>
+             </div>
+</body>
 </html>
