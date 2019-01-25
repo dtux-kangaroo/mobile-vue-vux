@@ -1,7 +1,7 @@
 {
-  "name": "[[=model.name]]",
-  "version": "[[=model.version]]",
-  "description": "[[=model.description]]",
+  "name": "mobile-vue-vux",
+  "version": "1.0.0",
+  "description": "a project for ko-script",
   "author": "charles.yang",
   "private": true,
   "scripts": {
