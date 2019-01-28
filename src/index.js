@@ -10,6 +10,7 @@ import App from './app'
 Vue.use(vuexI18n.plugin, store);
 
 Vue.i18n.set('en');
+
 new Vue({
   el:"#app-box",
   router,
