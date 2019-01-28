@@ -7,9 +7,6 @@ module.exports = (context) => {
   const {webpack} = context;
   return {
     webpack:{
-      entry: {
-        index: './src/main.js'
-      },
       plugins:[
        
         new CopyWebpackPlugin([
@@ -19,7 +16,7 @@ module.exports = (context) => {
         ])
       ],
       resolve:{
-        extensions: ['.js', '.vue', '.json'],
+        extensions: ['.js', '.json'],
         alias: {
           'vue$': 'vue/dist/vue.esm.js',
           '@': path.resolve(__dirname,'src'),
