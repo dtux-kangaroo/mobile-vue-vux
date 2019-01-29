@@ -4,8 +4,9 @@ import Vue from 'vue'
 import router from '@/router/router'
 import vuexI18n from 'vuex-i18n';
 import store from '@/store'
-// import FastClick from 'fastclick'
+import FastClick from 'fastclick'
 import App from './app'
+import '@babel/polyfill'
 
 Vue.use(vuexI18n.plugin, store);
 
