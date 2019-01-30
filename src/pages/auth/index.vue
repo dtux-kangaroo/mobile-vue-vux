@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import api from "@/api";
+import {API} from "@/api/index.js";
 export default {
   data () {
     return {
@@ -15,11 +15,11 @@ export default {
     }
   },
   mounted() {
-    api.getHomeData({}).then(ret=>{
+    API.getHomeData({}).then(ret=>{
       console.log(ret,'home');
       //this.$router.push({ name: "home", params: { id: ret.data } });
     }) //getUserData
-    api.getUserData({}).then(ret=>{
+    API.getUserData({}).then(ret=>{
       console.log(ret,'user');
       //this.$router.push({ name: "home", params: { id: ret.data } });
     })

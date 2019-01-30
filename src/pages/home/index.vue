@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import api from "@/api/index.js";
+import {API} from "@/api/index.js";
 import {Percent} from "@/components/chart/index"
 export default {
   components:{
@@ -20,7 +20,7 @@ export default {
     }
   },
   mounted() {
-    api.getHomeData({}).then(ret=>{
+    API.getHomeData({}).then(ret=>{
       console.log(then);
       this.$router.push({ name: "home", params: { id: ret.data } });
     })

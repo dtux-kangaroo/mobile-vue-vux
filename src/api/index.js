@@ -1,5 +1,5 @@
 import ReqUrl from './reqUrl';
-import http from '@/utils/http';
+import http from '../utils/http';
 const { keys }=Object;  // keys()  获得对象属性名数组
 function mapUrlObjToFuncObj(urlObj){ 
   const API = {};
@@ -22,3 +22,16 @@ function mapUrlObjToStrObj(urlObj){
 
 export const API = mapUrlObjToFuncObj(ReqUrl);
 export const URL = mapUrlObjToStrObj(ReqUrl);
+
+// import http from '../utils/http'
+// import reqUrl from './reqUrl'
+// export default {
+//   async getHomeData(param){
+//     let ret= await http.get(reqUrl.getHomeData, param);
+//     return ret;
+//   },
+//   async getUserData(param){
+//     let ret= await http.get(reqUrl.getUserData, param);
+//     return ret;
+//   }
+// }
